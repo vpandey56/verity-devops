@@ -14,5 +14,13 @@ pipeline {
 		}
 		
 		// *****ALL CODE TO BE ADDED ABOVE THIS COMMENT*****
+		
+		//Code starts for stage Compile
+		stage('Compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+		
     }
 }
